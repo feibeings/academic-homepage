@@ -3,23 +3,22 @@
 # -----------------------------------------------------------------------------
 
 title: blank # the website title (if blank, full name will be used instead)
-first_name: You
-middle_name: R.
-last_name: Name
-email: you@example.com
-description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
+first_name: 张三
+middle_name:
+last_name:
+email: zhangsan@example.com
+description: > # 个人学术主页 - 研究方向、论文、项目、专利、获奖
+  个人学术主页。研究方向：[请在此填写研究方向]。
 footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
-  Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
-  Photos from <a href="https://unsplash.com" target="_blank">Unsplash</a>.
-keywords: jekyll, jekyll-theme, academic-website, portfolio-website # add your own keywords or leave empty
-lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
-icon: ⚛️ # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
+  Hosted by <a href="https://pages.cloudflare.com/" target="_blank">Cloudflare Pages</a>.
+keywords: 学术主页, 科研人员, 个人主页
+lang: zh # 中文站点
+icon: 🎓 # the emoji used as the favicon
 
-url: https://alshedivat.github.io # the base hostname & protocol for your site
-baseurl: /al-folio # the subpath of your site, e.g. /blog/. Leave blank for root
-last_updated: false # set to true if you want to display last updated in the footer
+url: https://YOUR-SITE.pages.dev # 部署到 Cloudflare Pages 后替换为实际域名
+baseurl: # Cloudflare Pages 部署在根路径，留空
+last_updated: true # 在页脚显示最后更新时间
 impressum_path: # set to path to include impressum link in the footer, use the same path as permalink in a page, helps to conform with EU GDPR
 back_to_top: true # set to false to disable the back to top button
 
@@ -81,7 +80,7 @@ flickr_id: # your flickr id
 github_username: # your GitHub user name
 gitlab_username: # your GitLab user name
 ieee_id: # your ieeexplore.ieee.org/author/id
-inspirehep_id: 1010907 # Inspire HEP author ID
+inspirehep_id: # Inspire HEP author ID
 instagram_id: # your instagram id
 kaggle_id: # your kaggle id
 keybase_username: # your keybase user name
@@ -96,7 +95,7 @@ pinterest_id: # your pinterest id
 publons_id: # your ID on Publons
 quora_username: # your Quora username
 research_gate_profile: # your profile on ResearchGate
-scholar_userid: qc6CJjYAAAAJ # your Google Scholar ID
+scholar_userid: # your Google Scholar ID (在 Google Scholar 个人主页 URL 中找到)
 scopus_id: # your profile on Scopus
 semanticscholar_id: # your Semantic Scholar ID
 spotify_id: # your spotify id
@@ -133,8 +132,8 @@ bing_site_verification: # out your bing-site-verification ID (Bing Webmaster)
 # Blog
 # -----------------------------------------------------------------------------
 
-blog_name: al-folio # blog_name will be displayed in your blog page
-blog_description: a simple whitespace theme for academics
+blog_name: 学术博客 # blog_name will be displayed in your blog page
+blog_description: 科研笔记与学术分享
 permalink: /blog/:year/:title/
 lsi: false # produce an index for related posts
 
@@ -147,34 +146,26 @@ related_blog_posts:
   max_related: 5
 
 # Giscus comments (RECOMMENDED)
-# Follow instructions on https://giscus.app/ to setup for your repo to fill out the information below.
 giscus:
   repo: # <your-github-user-name>/<your-github-repo-name>
-  repo_id: # leave empty or specify your repo_id (see https://giscus.app/)
-  category: Comments # name of the category under which discussions will be created
-  category_id: # leave empty or specify your category_id (see https://giscus.app/)
-  mapping: title # identify discussions by post title
-  strict: 1 # use strict identification mode
-  reactions_enabled: 1 # enable (1) or disable (0) emoji reactions
-  input_position: bottom # whether to display input form below (bottom) or above (top) the comments
-  theme: preferred_color_scheme # name of the color scheme (preferred works well with al-folio light/dark mode)
+  repo_id: # leave empty or specify your repo_id
+  category: Comments
+  category_id: # leave empty or specify your category_id
+  mapping: title
+  strict: 1
+  reactions_enabled: 1
+  input_position: bottom
+  theme: preferred_color_scheme
   emit_metadata: 0
-  lang: en
+  lang: zh-CN
 
 # Disqus comments (DEPRECATED)
-disqus_shortname: al-folio # put your disqus shortname
-# https://help.disqus.com/en/articles/1717111-what-s-a-shortname
+disqus_shortname: # put your disqus shortname
 
 # External sources.
-# If you have blog posts published on medium.com or other external sources,
-# you can display them in your blog by adding a link to the RSS feed.
 external_sources:
-  - name: medium.com
-    rss_url: https://medium.com/@al-folio/feed
-  - name: Google Blog
-    posts:
-      - url: https://blog.google/technology/ai/google-gemini-update-flash-ai-assistant-io-2024/
-        published_date: 2024-05-14
+  # - name: medium.com
+  #   rss_url: https://medium.com/@yourname/feed
 
 # -----------------------------------------------------------------------------
 # Newsletter
@@ -313,8 +304,8 @@ display_categories: ["external-services"] # these categories will be displayed o
 # -----------------------------------------------------------------------------
 
 scholar:
-  last_name: [Einstein]
-  first_name: [Albert, A.]
+  last_name: [Zhang]
+  first_name: [San]
 
   style: apa
   locale: en

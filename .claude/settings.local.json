@@ -12,7 +12,18 @@
       "Bash(unzip -q al-folio.zip -d al-folio-extract)",
       "Bash(git clone *)",
       "Bash(rm -rf .git)",
-      "Bash(unzip -q al-folio-master.zip)"
+      "Bash(unzip -q al-folio-master.zip)",
+      "Bash(ruby --version)",
+      "Bash(gem --version)",
+      "Bash(bundler --version)",
+      "Bash(head -30 _layouts/cv.liquid)",
+      "Bash(head -30 _layouts/cv.html)",
+      "Bash(gh --version)",
+      "Bash(gh auth *)",
+      "Bash(git commit -m ' *)",
+      "Bash(rm -f _posts/*.md _news/announcement_2.md _news/announcement_3.md _projects/3_project.md _projects/4_project.md _projects/5_project.md _projects/6_project.md _projects/7_project.md _projects/8_project.md _projects/9_project.md _projects/10_project.md)",
+      "Bash(git add *)",
+      "Bash(git commit *)"
     ]
   }
 }

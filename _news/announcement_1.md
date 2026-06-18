@@ -1,8 +1,6 @@
 ---
 layout: post
-date: 2015-10-22 15:59:00-0400
-inline: true
-related_posts: false
+date: 2025-01-01
 ---
 
-A simple inline announcement.
+网站正式上线！欢迎访问我的个人学术主页。

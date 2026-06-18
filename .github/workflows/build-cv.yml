@@ -1,0 +1,50 @@
+name: Build CV PDF and Word
+
+on:
+  push:
+    paths:
+      - "cv.md"
+      - ".github/workflows/build-cv.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build-cv:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Generate PDF
+        uses: docker://pandoc/latex:latest
+        with:
+          args: >-
+            cv.md
+            --output=assets/pdf/cv.pdf
+            --pdf-engine=xelatex
+            --template=eisvogel
+            --metadata title="个人简历"
+            --metadata author="张三"
+            -V CJKmainfont="Noto Sans CJK SC"
+            -V geometry:margin=2cm
+            -V fontsize=11pt
+            -V colorlinks=true
+
+      - name: Generate DOCX
+        uses: docker://pandoc/latex:latest
+        with:
+          args: >-
+            cv.md
+            --output=assets/pdf/cv.docx
+            --metadata title="个人简历"
+            --metadata author="张三"
+
+      - name: Commit generated files
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add assets/pdf/cv.pdf assets/pdf/cv.docx
+          git diff --staged --quiet || git commit -m "Auto-generate CV PDF and DOCX"
+          git push
