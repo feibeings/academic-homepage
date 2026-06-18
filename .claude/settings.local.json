@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": [
+      "WebSearch",
+      "WebFetch(domain:github.com)",
+      "WebFetch(domain:ronglu-stanford.github.io)",
+      "WebFetch(domain:academicpages.github.io)",
+      "Bash(git init *)",
+      "Bash(cd /tmp)",
+      "Bash(curl -L --retry 3 --retry-delay 5 -o al-folio.zip https://github.com/alshedivat/al-folio/archive/refs/heads/master.zip)",
+      "Read(//tmp/**)",
+      "Bash(unzip -q al-folio.zip -d al-folio-extract)",
+      "Bash(git clone *)",
+      "Bash(rm -rf .git)",
+      "Bash(unzip -q al-folio-master.zip)"
+    ]
+  }
+}
