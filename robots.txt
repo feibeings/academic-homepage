@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://academic-homepage-dxc.pages.dev/sitemap.xml
+Sitemap: https://jiangfei.pages.dev/sitemap.xml
