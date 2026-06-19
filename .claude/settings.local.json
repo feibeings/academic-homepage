@@ -40,7 +40,13 @@
       "Bash(where python3 *)",
       "Bash(ls /c/Python*/python.exe)",
       "Read(//c/Users/Swagg/AppData/Local/Programs/**)",
-      "Bash(/c/Users/Swagg/anaconda3/python.exe -c ' *)"
+      "Bash(/c/Users/Swagg/anaconda3/python.exe -c ' *)",
+      "Bash(python3 -c \"import sys,json; d=json.load\\(sys.stdin\\)['result']; print\\('subdomain:', d.get\\('subdomain'\\)\\); print\\('domains:', d.get\\('domains'\\)\\); print\\('name:', d.get\\('name'\\)\\)\")",
+      "Bash(/c/Users/Swagg/anaconda3/python.exe -c \"import sys,json; d=json.load\\(sys.stdin\\)['result']; print\\('subdomain:', d.get\\('subdomain'\\)\\); print\\('domains:', d.get\\('domains'\\)\\); print\\('name:', d.get\\('name'\\)\\)\")",
+      "Bash(/c/Users/Swagg/anaconda3/python.exe -c \"import sys,json; d=json.load\\(sys.stdin\\); print\\('success:', d['success']\\); r=d.get\\('result',{}\\); print\\('subdomain:', r.get\\('subdomain'\\)\\); print\\('errors:', d.get\\('errors'\\)\\)\")",
+      "Bash(/c/Users/Swagg/anaconda3/python.exe -c \"import sys,json; d=json.load\\(sys.stdin\\); print\\('success:', d['success']\\); print\\('errors:', d.get\\('errors'\\)\\); r=d.get\\('result',{}\\); print\\('subdomain:', r.get\\('subdomain'\\)\\)\")",
+      "Bash(/c/Users/Swagg/anaconda3/python.exe -c \"import sys,json; d=json.load\\(sys.stdin\\); print\\('Deleted:', d['success']\\)\")",
+      "Bash(/c/Users/Swagg/anaconda3/python.exe -c \"import sys,json; print\\('OK' if json.load\\(sys.stdin\\)['success'] else 'FAIL'\\)\")"
     ]
   }
 }
