@@ -16,7 +16,7 @@ keywords: 学术主页, 科研人员, 个人主页
 lang: zh # 中文站点
 icon: 🎓 # the emoji used as the favicon
 
-url: https://YOUR-SITE.pages.dev # 部署到 Cloudflare Pages 后替换为实际域名
+url: https://academic-homepage-dxc.pages.dev # Cloudflare Pages 实际域名
 baseurl: # Cloudflare Pages 部署在根路径，留空
 last_updated: true # 在页脚显示最后更新时间
 impressum_path: # set to path to include impressum link in the footer, use the same path as permalink in a page, helps to conform with EU GDPR

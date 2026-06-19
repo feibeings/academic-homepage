@@ -6,7 +6,7 @@
 - **职称**：教授
 - **单位**：XX大学 XX学院
 - **邮箱**：zhangsan@example.com
-- **个人主页**：https://YOUR-SITE.pages.dev
+- **个人主页**：https://academic-homepage-dxc.pages.dev
 
 ## 教育背景
 
