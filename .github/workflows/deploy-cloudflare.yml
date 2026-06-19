@@ -47,10 +47,8 @@ jobs:
           bundle exec jekyll build
 
       - name: Deploy to Cloudflare Pages
-        uses: cloudflare/pages-action@v1
-        with:
-          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          projectName: academic-homepage
-          directory: _site
-          gitHubToken: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          npm install -g wrangler
+          export CLOUDFLARE_API_TOKEN="${{ secrets.CLOUDFLARE_API_TOKEN }}"
+          export CLOUDFLARE_ACCOUNT_ID="${{ secrets.CLOUDFLARE_ACCOUNT_ID }}"
+          wrangler pages deploy _site --project-name=academic-homepage --branch=main
