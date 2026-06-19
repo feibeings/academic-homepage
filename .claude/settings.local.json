@@ -33,7 +33,14 @@
       "Bash(gh secret *)",
       "Bash(curl *)",
       "Bash(gh workflow *)",
-      "Bash(gh run *)"
+      "Bash(gh run *)",
+      "WebFetch(domain:academic-homepage-dxc.pages.dev)",
+      "Bash(python -c ' *)",
+      "Bash(where python *)",
+      "Bash(where python3 *)",
+      "Bash(ls /c/Python*/python.exe)",
+      "Read(//c/Users/Swagg/AppData/Local/Programs/**)",
+      "Bash(/c/Users/Swagg/anaconda3/python.exe -c ' *)"
     ]
   }
 }

@@ -2,23 +2,23 @@
 # Site settings
 # -----------------------------------------------------------------------------
 
-title: blank # the website title (if blank, full name will be used instead)
-first_name: 张三
+title: blank
+first_name: 蒋飞
 middle_name:
 last_name:
-email: zhangsan@example.com
-description: > # 个人学术主页 - 研究方向、论文、项目、专利、获奖
-  个人学术主页。研究方向：[请在此填写研究方向]。
+email: jiangfei@dgut.edu.cn
+description: > # 个人学术主页
+  东莞理工学院 机械工程学院 准聘副教授。研究方向：深度学习与大模型驱动的工业机器人智能故障诊断、机器视觉缺陷检测、动力学建模与信号处理。
 footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
   Hosted by <a href="https://pages.cloudflare.com/" target="_blank">Cloudflare Pages</a>.
-keywords: 学术主页, 科研人员, 个人主页
-lang: zh # 中文站点
-icon: 🎓 # the emoji used as the favicon
+keywords: 蒋飞, 东莞理工学院, 故障诊断, 深度学习, 机器视觉, 动力学
+lang: zh
+icon: 🎓
 
-url: https://academic-homepage-dxc.pages.dev # Cloudflare Pages 实际域名
-baseurl: # Cloudflare Pages 部署在根路径，留空
-last_updated: true # 在页脚显示最后更新时间
+url: https://academic-homepage-dxc.pages.dev
+baseurl:
+last_updated: true
 impressum_path: # set to path to include impressum link in the footer, use the same path as permalink in a page, helps to conform with EU GDPR
 back_to_top: true # set to false to disable the back to top button
 
@@ -304,8 +304,8 @@ display_categories: ["external-services"] # these categories will be displayed o
 # -----------------------------------------------------------------------------
 
 scholar:
-  last_name: [Zhang]
-  first_name: [San]
+  last_name: [Jiang]
+  first_name: [Fei]
 
   style: apa
   locale: en

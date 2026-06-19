@@ -26,7 +26,7 @@ jobs:
             --pdf-engine=xelatex
             --template=eisvogel
             --metadata title="个人简历"
-            --metadata author="张三"
+            --metadata author="蒋飞"
             -V CJKmainfont="Noto Sans CJK SC"
             -V geometry:margin=2cm
             -V fontsize=11pt
@@ -39,7 +39,7 @@ jobs:
             cv.md
             --output=assets/pdf/cv.docx
             --metadata title="个人简历"
-            --metadata author="张三"
+            --metadata author="蒋飞"
 
       - name: Commit generated files
         run: |
