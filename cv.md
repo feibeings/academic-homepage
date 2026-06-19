@@ -9,7 +9,7 @@
 - **单位**：东莞理工学院 机械工程学院
 - **邮箱**：jiangfei@dgut.edu.cn
 - **电话**：18588573716
-- **个人主页**：https://jiangfei.pages.dev
+- **个人主页**：https://jiangfei-cv.pages.dev
 
 ## 教育背景
 
