@@ -2,7 +2,7 @@
 layout: cv
 permalink: /cv/
 title: 个人简历
-nav: true
+nav: false
 nav_order: 6
 cv_pdf: cv.pdf
 cv_docx: cv.docx
