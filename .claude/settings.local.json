@@ -23,7 +23,17 @@
       "Bash(git commit -m ' *)",
       "Bash(rm -f _posts/*.md _news/announcement_2.md _news/announcement_3.md _projects/3_project.md _projects/4_project.md _projects/5_project.md _projects/6_project.md _projects/7_project.md _projects/8_project.md _projects/9_project.md _projects/10_project.md)",
       "Bash(git add *)",
-      "Bash(git commit *)"
+      "Bash(git commit *)",
+      "Bash(git branch *)",
+      "Bash(gh repo *)",
+      "Bash(git push *)",
+      "Bash(ssh *)",
+      "Bash(git remote *)",
+      "Bash(npx wrangler *)",
+      "Bash(gh secret *)",
+      "Bash(curl *)",
+      "Bash(gh workflow *)",
+      "Bash(gh run *)"
     ]
   }
 }
